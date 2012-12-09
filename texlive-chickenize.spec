@@ -1,11 +1,11 @@
-# revision 27720
+# revision 26702
 # category Package
 # catalog-ctan /macros/luatex/generic/chickenize
-# catalog-date 2012-09-16 19:39:43 +0200
+# catalog-date 2012-05-21 11:52:01 +0200
 # catalog-license lppl1.3
-# catalog-version 0.1a
+# catalog-version 0.1
 Name:		texlive-chickenize
-Version:	0.1a
+Version:	0.1
 Release:	1
 Summary:	Use lua callbacks for "interesting" textual effects
 Group:		Publishing
