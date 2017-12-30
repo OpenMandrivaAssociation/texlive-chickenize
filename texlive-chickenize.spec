@@ -1,12 +1,6 @@
-# revision 31505
-# category Package
-# catalog-ctan /macros/luatex/generic/chickenize
-# catalog-date 2013-08-23 07:33:01 +0200
-# catalog-license lppl1.3
-# catalog-version 0.2.1a
 Name:		texlive-chickenize
-Version:	0.2.1a
-Release:	9
+Version:	0.2.5
+Release:	1
 Summary:	Use lua callbacks for "interesting" textual effects
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/chickenize
@@ -38,13 +32,10 @@ document.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/luatex/chickenize/chickenize.lua
-%{_texmfdistdir}/tex/luatex/chickenize/chickenize.sty
-%{_texmfdistdir}/tex/luatex/chickenize/chickenize.tex
-%doc %{_texmfdistdir}/doc/luatex/chickenize/README
-%doc %{_texmfdistdir}/doc/luatex/chickenize/chickenize.pdf
+%{_texmfdistdir}/tex/luatex/chickenize
+%doc %{_texmfdistdir}/doc/luatex/chickenize
 #- source
-%doc %{_texmfdistdir}/source/luatex/chickenize/chickenize.dtx
+%doc %{_texmfdistdir}/source/luatex/chickenize
 
 #-----------------------------------------------------------------------
 %prep
