@@ -1,6 +1,6 @@
 Name:		texlive-chickenize
 Version:	0.2.5
-Release:	1
+Release:	2
 Summary:	Use lua callbacks for "interesting" textual effects
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/chickenize
