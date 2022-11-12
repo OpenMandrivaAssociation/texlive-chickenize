@@ -1,13 +1,13 @@
 Name:		texlive-chickenize
-Version:	0.2.5
-Release:	3
+Version:	57325
+Release:	1
 Summary:	Use lua callbacks for "interesting" textual effects
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/luatex/generic/chickenize
 License:	LPPL1.3
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chickenize.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chickenize.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chickenize.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chickenize.r57325.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chickenize.doc.r57325.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/chickenize.source.r57325.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -23,12 +23,12 @@ doing what its name says) could be useful in a "normal" LuaTeX
 document.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -39,7 +39,8 @@ document.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
